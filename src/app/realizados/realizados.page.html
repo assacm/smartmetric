@@ -1,10 +1,11 @@
-<ion-toolbar>
-  <ion-button slot="start" [routerLink]="['/capturar']">
-        <ion-icon slot="start" name="chevron-back-outline"></ion-icon>
-        Volver
-  </ion-button>
-  <img slot=end src="/assets/logos/figura.png">
- </ion-toolbar>
+<ion-header [translucent]="true">
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Realizados</ion-title>
+      </ion-toolbar>
+    </ion-header>
 
 <ion-content>
 <ion-button [routerLink]="['/ver-realizado']"> Ver</ion-button>

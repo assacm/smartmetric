@@ -9,50 +9,52 @@
 <ion-content>
 
         <ion-label class="idcaptura">#123123{{idCaptura}}</ion-label>
-        <div class="contenedor-datos"> 
-          <div class="cajita">
+  <div class="contenedor-datos"> 
+              <div class="cajita">
             <div class="uno"><ion-label>ID</ion-label></div>
             <div class="dos"><ion-label>1{{ID}}</ion-label></div>
-          </div>
-          <div class="cajita">
+              </div>
+              <div class="cajita">
             <div class="uno" ><ion-label>Nombre</ion-label></div>
             <div class="dos"><ion-label>Alma Julissa Casillas Mendivil{{nombre}}</ion-label></div>
-          </div>
-          <div>
-            <ion-label style="font-style:bold; font-size:18px;">Dirección</ion-label><br>
-            <div class="direccion">
+              </div>
+              <div>
+                 <ion-label style="font-weight:600;">Dirección</ion-label><br>
+                  <div class="direccion">
               <ion-label>Benjamin Chaparro{{calle}}</ion-label><br>
               <ion-label>#{{numero}}</ion-label><br>
               <ion-label>Col. Centro {{colonia}}</ion-label>
-            </div>    
-          </div>
-        </div>
-
-        <div class="captura">
-        <ion-label>Ingresar lectura</ion-label>
-        <ion-input type="password"></ion-input>
-        <ion-label>Confirmar lectura</ion-label>
-        <ion-input type="password"></ion-input>
-        </div>
-       
-        <div class="anomalias">
-           <ion-accordion-group>
-            <ion-accordion value="first">
-              <ion-item slot="header" color="light">
-                <ion-label>Anomalías</ion-label>
-              </ion-item>
-              <div class="ion-padding" slot="content">
-                <ion-list>
-                  <ion-item *ngFor="let entry of form">
-                    <ion-label>{{entry.val}}</ion-label>
-                    <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
-                  </ion-item>
-                </ion-list>
+                  </div>    
               </div>
-            </ion-accordion>
-  
-          </ion-accordion-group>
-        </div>
+
+              <div class="captura">
+                <ion-label>Ingresar lectura</ion-label>
+                <ion-input type="password"></ion-input>
+                <ion-label>Confirmar lectura</ion-label>
+                <ion-input type="password"></ion-input>
+                </div>
+               
+                <div class="anomalias">
+                   <ion-accordion-group>
+                    <ion-accordion value="first">
+                      <ion-item slot="header" color="light">
+                        <ion-label>Anomalías</ion-label>
+                      </ion-item>
+                      <div class="ion-padding" slot="content">
+                        <ion-list>
+                          <ion-item *ngFor="let entry of form">
+                            <ion-label>{{entry.val}}</ion-label>
+                            <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+                          </ion-item>
+                        </ion-list>
+                      </div>
+                    </ion-accordion>
+          
+                  </ion-accordion-group>
+                </div>
+  </div>
+
+
         
         <div class="foto">
           <ion-label>Capturar</ion-label><br>

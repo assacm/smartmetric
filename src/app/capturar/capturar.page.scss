@@ -4,68 +4,60 @@ ion-toolbar ion-button{
     --color: #5B5858;
     --box-shadow:none;
     text-transform: none;
+    font-family: 'Segoe UI';
+    --color:#6C7572;
+    font-size: 15px;
 }
 ion-toolbar img{
     height: 45px;
     width: auto;
     padding-right: 15px;
 }
+
+ion-content{
+    font-family: 'Segoe UI';
+    --color:#6C7572;
+    font-size: 18px;
+}
 .idcaptura{
-    margin-left:85%;
+    margin-left:70%;
+    font-weight: 600;
 }
 .contenedor-datos{
-    padding-left: 15px;
-    margin-bottom: 30px;
-
+    margin: 30px;
 }
 .contenedor-datos .cajita{
     display: flex;
-    font-size: 18px;
 }
 .contenedor-datos .cajita .uno{
     font-style: bold;
     width: 100px;
     flex-grow: 1;
-}
-.contenedor-datos .cajita .uno ion-label{
-    font-style: bold;
+    font-weight: 600;
 }
 .contenedor-datos .cajita .dos{
     width: 100px;
-    margin-left: 10px;  
     flex-grow: 2;
-    font-size: 18px;
-    font-style:normal;
 }
-.contenedor-datos .cajita .dos ion-label{
-    font-size: 18px;
-    font-style:normal;
-}
-
-
-
 .direccion{
-    font-size: 15px;
-    font-style: normal;
+ 
 }
 .captura{
     width: 80%;
-    margin-right: 15px;
+    margin-top: 15px;
+    font-weight: 600;
 }
-.captura ion-label{
-    margin: 15px;
-   font-size: 18px;
 
-}
 .captura ion-input{
     --background:#F3F3F3;
-    margin:15px ;
     border-radius:10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
 }
 .foto{
     margin:30px;
     text-align: center;
-    font-size: 18px;
+    font-weight: 600;
 }
 .foto ion-button{
     --margin: 10px auto;
@@ -78,6 +70,8 @@ ion-toolbar img{
 }
 .buttons {
     text-align:center;
+    margin-top: 20px;
+    margin-bottom:20px;
 }
 .buttons .visualizar  {
     --background: #fff;
@@ -92,7 +86,12 @@ ion-button{
 }
 .anomalias{
     width: 80%;
-    margin: 15px;
+    
+}
+ion-item ion-label{
+    font-family: 'Segoe UI';
+    --color: #5B5858;
+    font-weight: 400;
 }
 
 .swiper-slide-active{
