@@ -30,6 +30,18 @@ const routes: Routes = [
   {
     path: 'log-in',
     loadChildren: () => import('./log-in/log-in.module').then( m => m.LogInPageModule)
+  },
+  {
+    path: 'capturar',
+    loadChildren: () => import('./capturar/capturar.module').then( m => m.CapturarPageModule)
+  },
+  {
+    path: 'reporte',
+    loadChildren: () => import('./reporte/reporte.module').then( m => m.ReportePageModule)
+  },
+  {
+    path: 'ver-realizado',
+    loadChildren: () => import('./ver-realizado/ver-realizado.module').then( m => m.VerRealizadoPageModule)
   }
 ];
 
